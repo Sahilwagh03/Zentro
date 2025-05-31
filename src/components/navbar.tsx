@@ -34,7 +34,7 @@ const Navbar = (props: Props) => {
         </Link>
 
         {/* Desktop: show links */}
-        <ul className="hidden md:flex space-x-7 text-sm font-semibold tracking-tight">
+        <ul className="hidden md:flex space-x-7 text-sm font-medium ">
           {links.map(({ href, label }) => (
             <li key={href}>
               <Link
@@ -54,7 +54,7 @@ const Navbar = (props: Props) => {
         {/* → Right side */}
         <div className="flex items-center space-x-4">
           {/* Desktop: show Contact button */}
-          <button className="hidden md:block p-1 px-3 text-sm font-semibold tracking-tight bg-white/60 rounded-full">
+          <button className="hidden md:block p-1 px-3 text-sm  bg-white/60 rounded-full">
             <Link href="/login">Contact Us</Link>
           </button>
 

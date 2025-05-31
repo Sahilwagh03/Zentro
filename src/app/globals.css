@@ -1,30 +1,58 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root {
-  --color-primary: #d7ff00;
+/* Local font: Franklin Gothic */
+@font-face {
+  font-family: 'Franklin Gothic';
+  src: url('/fonts/FranklinGothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'Oswald';
+  src: url('/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+
+/* Tailwind 4.1 @theme block */
+@theme {
+  --font-base: 'Franklin Gothic', sans-serif;
+  --font-oswald: 'Oswald', sans-serif;
+
+  --color-primary: #d7ff00;
+  --color-secondary: #738f00;
+}
+
+/* Apply Franklin Gothic globally */
+html {
+  font-family: var(--font-base);
+}
+
+/* Oswald utility class */
+.text-oswald {
+  font-family: var(--font-oswald);
+  font-optical-sizing: auto;
+}
+
+/* Colors */
 .bg-primary {
   background-color: var(--color-primary);
 }
 
 .text-secondary {
-  color: #738f00;
+  color: var(--color-secondary);
 }
 
-.text-oswald {
-  font-family: 'Oswald', sans-serif;
-  font-optical-sizing: auto;
-}
-
+/* Optional extra utility */
 .rotate-text {
-  /* Halved radius for smaller circle */
   transform-origin: 0 -40px;
   font-size: 0.5rem;
   line-height: 1;
 }
 
+/* Animations */
 @keyframes scrollCarousel {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }

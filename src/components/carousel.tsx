@@ -10,18 +10,18 @@ const items = [
 ]
 
 const Carousel = () => {
-  const repeatedItems = [...items, ...items , ...items] // Double for infinite effect
+  const repeatedItems = [...items, ...items, ...items, ...items]
 
   return (
-    <div className="overflow-hidden whitespace-nowrap py-4">
-      <div className="animate-carousel inline-block">
+    <div className="overflow-hidden whitespace-nowrap py-4 pt-2">
+      <div className="animate-carousel inline-flex items-center">
         {repeatedItems.map((text, index) => (
-          <span
-            key={index}
-            className="inline-block text-black text-xl font-semibold mx-4"
-          >
-            {text} <span className="text-black/30 ml-4">•</span>
-          </span>
+          <React.Fragment key={index}>
+            <span className="inline-flex items-center text-black font-oswald font-medium text-lg mx-4">
+              {text}
+            </span>
+            <span className="text-2xl text-black/30 leading-none mx-4">•</span>
+          </React.Fragment>
         ))}
       </div>
     </div>

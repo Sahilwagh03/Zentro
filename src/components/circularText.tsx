@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const CircularText = () => {
   const circleRef = useRef<HTMLDivElement>(null)
-  const circleText = "Scroll Down For More • Scroll Down For More •"
+  const circleText = "Scroll Down For More • Scroll Down For More • "
   const letters = circleText.split('')
   const angleIncrement = 360 / letters.length
 
@@ -30,7 +30,7 @@ const CircularText = () => {
             return (
               <span
                 key={index}
-                className="absolute font-black text-black/30 leading-none"
+                className="absolute font-medium text-black/30 leading-none"
                 style={{
                   top: '50%',
                   left: '50%',

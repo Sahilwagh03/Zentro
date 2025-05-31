@@ -1,13 +1,6 @@
 import Navbar from '@/components/navbar'
 import './globals.css'
-import { Libre_Franklin } from 'next/font/google'
 import type { ReactNode } from 'react'
-
-const libreFranklin = Libre_Franklin({
-  subsets: ['latin'],
-  variable: '--font-libre-franklin',
-  display: 'swap',
-})
 
 export const metadata = {
   title: 'Zentro',
@@ -20,7 +13,7 @@ export default function RootLayout({
   children: ReactNode
 }) {
   return (
-    <html lang="en" className={libreFranklin.variable}>
+    <html lang="en">
       <body>
         <Navbar/>
         {children}
