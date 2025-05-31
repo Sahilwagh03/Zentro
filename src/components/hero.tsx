@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import CircularText from './circularText'
+import Carousel from './carousel'
 
 type Props = {}
 
@@ -67,9 +68,8 @@ const Hero = (props: Props) => {
             <div className="w-[5vw] h-[5vw] bg-black" />
           </h1>
         </div>
-
-
       </div>
+      <Carousel/>
     </div>
   )
 }

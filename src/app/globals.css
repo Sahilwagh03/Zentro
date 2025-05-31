@@ -24,3 +24,14 @@
   font-size: 0.5rem;
   line-height: 1;
 }
+
+@keyframes scrollCarousel {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-carousel {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollCarousel 20s linear infinite;
+}
