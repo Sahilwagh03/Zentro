@@ -7,7 +7,7 @@ type Props = {}
 
 const Hero = (props: Props) => {
   return (
-    <div className="relative w-full min-h-svh h-auto bg-primary z-10 pt-20">
+    <div className="relative w-full h-auto bg-primary z-10 pt-20">
       <div className="grid grid-cols-1 md:grid-cols-2 ">
 
         <div className="relative flex justify-center items-center h-auto md:pl-4">
