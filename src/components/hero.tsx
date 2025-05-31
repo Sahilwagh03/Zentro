@@ -15,7 +15,7 @@ const Hero = (props: Props) => {
             alt="Hero Image"
             width={500}
             height={500}
-            className="relative z-10 w-fit lg:w-[22rem] h-auto object-cover rounded-md"
+            className="relative z-10 w-full lg:w-[22rem] h-auto object-cover rounded-md"
           />
         </div>
 
