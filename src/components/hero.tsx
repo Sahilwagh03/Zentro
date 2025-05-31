@@ -9,32 +9,29 @@ const Hero = (props: Props) => {
     <div className="relative w-full min-h-svh h-auto bg-primary z-10 pt-20">
       <div className="grid grid-cols-1 md:grid-cols-2 ">
 
-        <div className="relative flex justify-center items-center h-auto pl-4">
-          <div className="absolute top-[-10px] left-[-10px] w-[380px] h-[380px] rounded-md bg-black/5 blur-md z-0" />
-          <div className="absolute bottom-[-10px] right-[-10px] w-[380px] h-[380px] rounded-md bg-black/5 blur-md z-0" />
-          <div className="absolute inset-0 w-[380px] h-[380px] rounded-md bg-black/5 blur-lg z-0" />
+        <div className="relative flex justify-center items-center h-auto md:pl-4">
           <Image
             src="/images/poster.png"
             alt="Hero Image"
             width={500}
             height={500}
-            className="relative z-10 w-[22rem] h-auto object-cover rounded-md"
+            className="relative z-10 w-fit lg:w-[22rem] h-auto object-cover rounded-md"
           />
         </div>
 
 
         {/* Top Right */}
-        <div className="flex flex-col justify-between h-auto pr-4">
+        <div className="relative flex flex-col justify-between h-auto px-4 md:pr-4">
           <div>
-            <div className='mt-8'>
-              <h2 className='text-2xl font-light tracking-tight text-secondary w-[25rem] text-oswald'>
+            <div className='mt-4 md:mt-8'>
+              <h2 className='text-2xl font-light tracking-tight text-secondary w-full md:w-[25rem] text-oswald'>
                 Stop Being Invisible Online —
                 <span className='font-semibold text-black italic text-oswald'> Make Your Business the First Choice on Google</span>
               </h2>
             </div>
             <CircularText />
           </div>
-          <div className='flex justify-end tracking-tight items-end'>
+          <div className='hidden md:flex justify-end tracking-tight items-end'>
             <div className='w-[20rem]'>
               <h2 className='inline-block text-sm font-medium py-1 border-b-2 border-b-black/20'>
                 Lets Get Started
@@ -44,9 +41,17 @@ const Hero = (props: Props) => {
               </p>
             </div>
           </div>
+          <div className='hidden md:flex absolute right-[1.5vw] rotate-[270deg] top-[10vw]'>
+            <div className="text-oswald flex flex-col items-start font-semibold text-[0.7rem] text-black/20 ">
+              <span>2025</span>
+              <span>Our Work</span>
+            </div>
+          </div>
         </div>
 
-        <div className="flex items-baseline h-auto]">
+
+
+        <div className="mt-4 md:mt-0 flex items-baseline h-auto]">
           <Image
             src="/images/Thender.svg"
             alt="Logo"

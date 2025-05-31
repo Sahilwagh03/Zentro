@@ -31,15 +31,6 @@ const Navbar = (props: Props) => {
             className="h-[8vw] min-h-[1.5rem] max-h-[2.5rem] w-auto"
             priority
           />
-          <h1
-            className="
-              flex items-baseline font-black leading-none text-black
-              text-[11vw] min-text-[1rem] max-text-[1.75rem]
-            "
-          >
-            ZENTRO
-            <div className="w-[3vw] h-[3vw] min-w-[0.5rem] min-h-[0.5rem] max-w-[1rem] max-h-[1rem] bg-black" />
-          </h1>
         </Link>
 
         {/* Desktop: show links */}
