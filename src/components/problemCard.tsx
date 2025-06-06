@@ -8,7 +8,7 @@ type Props = {
 
 function ProblemCard({ title, description }: Props) {
   return (
-    <div className='flex flex-col gap-1 p-6 max-w-sm'>
+    <div className='flex flex-col gap-1 p-6 max-w-sm shadow-xs rounded-lg bg-white border border-gray-200 hover:shadow-xl transition-shadow duration-300 ease-in-out'>
       <div className='flex items-center gap-2'>
         <Image
           src="/images/solutionicon.svg"

@@ -21,7 +21,7 @@ const problems = [
 
 function ProblemList() {
   return (
-    <div className='flex flex-col justify-center lg:pl-8'>
+    <div className='flex flex-col justify-center gap-4 lg:pl-8'>
       {problems.map((problem, index) => (
         <ProblemCard
           key={index}
