@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import { title } from 'process'
 import React from 'react'
 
 type Props = {}
@@ -5,42 +7,43 @@ type Props = {}
 const cards = [
   {
     title: (
-      <>
+      <span>
         Be Seen by the <br />
         Right <span className="bg-white text-black px-1">Audience</span>
-      </>
+      </span>
     ),
     description: 'Rank higher on Google and get discovered by customers actively searching for your services.',
     bg: 'bg-black',
     text: 'text-white',
-    image: '/images/audience.png', // 👈 replace with actual image paths
-    shapeColor: 'bg-lime-400'
+    image: '/images/Promise_1.jpg', // 👈 replace with actual image paths
+    titleStyle:'rotate-[-10deg] left-[15%]'
   },
   {
     title: (
-      <>
+      <span className='text-white'>
         Turn Traffic into <br />
-        <span className="bg-white text-black px-1">Revenue</span>
-      </>
+        <span className="bg-black px-1">Revenue</span>
+      </span>
     ),
     description: 'Our website will become a conversion machine, driving leads and sales 24/7.',
-    bg: 'bg-[#6c4cff]',
+    bg: 'bg-[#5b3ef2]',
     text: 'text-white',
-    image: '/images/revenue.png',
-    shapeColor: 'bg-lime-400'
+    image: '/images/Promise_2.jpg',
+    titleStyle:'rotate-[5deg] left-[15%] top-[10%] text-center'
   },
   {
     title: (
-      <>
+      <span className='text-white'>
         Scale Without <br />
-        <span className="bg-white text-black px-1">Breaking the Bank</span>
-      </>
+        <span className="bg-black px-1">Breaking</span>
+        the Bank
+      </span>
     ),
     description: 'Whether you’re a local business or targeting a global market, we’ll help you grow sustainably.',
-    bg: 'bg-[#a42fff]',
+    bg: 'bg-[#9d00ff]',
     text: 'text-white',
-    image: '/images/scale.png',
-    shapeColor: 'bg-lime-400'
+    image: '/images/Promise_3.jpg',
+    titleStyle:'rotate-[-10deg] left-[15%]'
   }
 ]
 
@@ -54,18 +57,17 @@ const OurPromise = (props: Props) => {
 
       <div className='grid grid-cols-1 md:grid-cols-3 gap-0.5'>
         {cards.map((card, index) => (
-          <div key={index} className={`${card.bg} ${card.text} rounded-3xl p-6 flex flex-col justify-between h-[35rem]`}>
+          <div key={index} className={`${card.bg} ${card.text} rounded-3xl p-6 flex flex-col gap-2 justify-between h-[35rem]`}>
             <div>
-              <div className='relative min-h-36'>
-                <h4 className='absolute text-2xl md:text-3xl font-bold  leading-tight'>{card.title}</h4>
+              <div className='relative min-h-32'>
+                <h4 className={`absolute text-2xl md:text-4xl font-bold  leading-tight ${card.titleStyle}`}>{card.title}</h4>
               </div>
               <div className='flex justify-center items-center'>
                 <p className='text-lg max-w-60 text-center opacity-90'>{card.description}</p>
               </div>
             </div>
-            <div className='mt-8 relative'>
-              <div className={`${card.shapeColor} w-full h-32 absolute top-0 left-0 -z-10 rounded-t-3xl skew-y-3`}></div>
-              <img src={card.image} alt='card visual' className='w-full h-32 object-contain mx-auto' />
+            <div className='relative'>
+              <Image width={242} height={260} src={card.image} alt='card visual' className='w-full h-[19.7rem] object-contain mx-auto' />
             </div>
           </div>
         ))}
