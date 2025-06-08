@@ -52,18 +52,16 @@ const StepsSection = () => {
                 })}
             </div>
             <div className="bg-black text-white relative flex items-center justify-center">
-                {/* Centered Text */}
                 <h1 className="text-[40vw] leading-none font-bold">ZENT</h1>
 
-                {/* Overlay Centered Div */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                        <Image
-                            src='/images/zentro-over-image.jpeg'
-                            alt='zentro-over-image'
-                            width={1000}
-                            height={1000}
-                            className="w-2xs h-48 object-cover rounded-lg"
-                        />
+                <div className="hidden md:absolute md:flex inset-0 items-center justify-center">
+                    <Image
+                        src='/images/zentro-over-image.jpeg'
+                        alt='zentro-over-image'
+                        width={1000}
+                        height={1000}
+                        className="w-2xs h-48 object-cover rounded-lg"
+                    />
                 </div>
             </div>
 
