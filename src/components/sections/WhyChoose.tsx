@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import BentoGrid from '../bentogrid'
 
 type Props = {}
 
@@ -7,7 +8,7 @@ const WhyChoose = (props: Props) => {
   return (
     <section className="bg-black px-4 md:px-20 py-10 md:py-20">
       <div>
-        <h1 className="text-white text-4xl md:text-6xl lg:text-8xl font-bold font-oswald">
+        <h1 className="text-white text-[1.7rem] md:text-6xl lg:text-8xl font-bold font-oswald">
           <div className="flex items-center flex-wrap gap-2 md:gap-4">
             <span>“Let’s Make</span>
             <span className='flex items-center'>
@@ -37,6 +38,10 @@ const WhyChoose = (props: Props) => {
             <span>”</span>
           </div>
         </h1>
+      </div>
+      <div className='pt-24'>
+        <h3 className='text-center font-oswald text-5xl text-white'>Why Choose <span className='text-primary'>ZENTRO?</span></h3>
+        <BentoGrid /> 
       </div>
     </section>
   )
