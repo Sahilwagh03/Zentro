@@ -39,8 +39,8 @@ const WhyChoose = (props: Props) => {
           </div>
         </h1>
       </div>
-      <div className='pt-24'>
-        <h3 className='text-center font-oswald text-5xl text-white'>Why Choose <span className='text-primary'>ZENTRO?</span></h3>
+      <div className='pt-12 md:pt-24'>
+        <h3 className='text-center font-oswald text-4xl md:text-6xl pb-4 md:pb-10 text-white '>Why Choose <span className='text-primary'>ZENTRO?</span></h3>
         <BentoGrid /> 
       </div>
     </section>
