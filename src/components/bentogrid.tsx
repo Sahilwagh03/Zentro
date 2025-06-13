@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { FaBolt } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function BentoGridLayout() {

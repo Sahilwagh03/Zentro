@@ -1,5 +1,6 @@
 import Hero from "@/components/hero";
 import OurPromise from "@/components/sections/OurPromise";
+import OurResults from "@/components/sections/OurResults";
 import OurServices from "@/components/sections/OurServices";
 import SolutionsSection from "@/components/sections/SolutionSection";
 import StepsSection from "@/components/sections/StepsSection";
@@ -14,6 +15,7 @@ export default function Home() {
       <StepsSection/>
       <WhyChoose/>
       <OurServices/>
+      <OurResults/>
     </main>
   );
 }
