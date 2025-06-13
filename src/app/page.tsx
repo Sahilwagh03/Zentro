@@ -1,5 +1,6 @@
 import Hero from "@/components/hero";
 import OurPromise from "@/components/sections/OurPromise";
+import OurServices from "@/components/sections/OurServices";
 import SolutionsSection from "@/components/sections/SolutionSection";
 import StepsSection from "@/components/sections/StepsSection";
 import WhyChoose from "@/components/sections/WhyChoose";
@@ -12,6 +13,7 @@ export default function Home() {
       <OurPromise/>
       <StepsSection/>
       <WhyChoose/>
+      <OurServices/>
     </main>
   );
 }

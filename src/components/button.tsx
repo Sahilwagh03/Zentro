@@ -1,17 +1,18 @@
 'use client'
-import React from 'react'
-import { FiArrowUpRight } from 'react-icons/fi'
+import { cn } from '@/utils/cn'
+import React, { ReactNode } from 'react'
 
-type Props = {}
 
-function Button({ }: Props) {
+type Props = {
+    children: ReactNode
+    className?: string
+}
+
+function Button({ children, className }: Props) {
     return (
-        <div className='flex justify-center md:justify-start items-center gap-1 relative'>
-            <button className="relative inline-flex items-center border text-black font-medium px-6 py-2 rounded-full group overflow-visible">
-                More About
-            </button>
-            <FiArrowUpRight size={44} />
-        </div>
+        <button className={cn("relative inline-flex items-center border text-black font-medium px-6 py-2 rounded-full group overflow-visible", className)}>
+            {children}
+        </button>
     )
 }
 

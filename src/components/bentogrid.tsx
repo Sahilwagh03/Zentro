@@ -4,7 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function BentoGridLayout() {
   return (
-    <div className="font-oswald grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 grid-rows-none lg:grid-rows-6 gap-4 bg-black text-white p-4 md:p-6 min-h-screen">
+    <div className="font-oswald grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 grid-rows-none lg:grid-rows-6 gap-4 bg-black text-white min-h-screen">
       {/* 1 - Left Hero */}
       <div className="border-[#424242] border-2 col-span-1 md:col-span-2 lg:row-span-6 bg-[url('/hero-image.jpg')] bg-cover bg-center rounded-xl relative h-[300px] md:h-[400px] lg:h-auto">
         <div className="absolute inset-0 bg-black/60 rounded-xl p-6 flex flex-col justify-end">

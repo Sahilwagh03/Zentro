@@ -2,7 +2,7 @@ import React from 'react'
 import Button from '../button'
 import Image from 'next/image'
 import ProblemList from '../problemList'
-
+import { FiArrowUpRight } from 'react-icons/fi'
 type Props = {}
 
 const SolutionsSection = (props: Props) => {
@@ -21,7 +21,12 @@ const SolutionsSection = (props: Props) => {
           <p className='mb-6 text-base md:text-lg font-normal'>
             We help you rise above these challenges with proven strategies tailored to deliver measurable results.
           </p>
-          <Button />
+          <div className='flex justify-center md:justify-start items-center gap-1 relative'>
+            <Button>
+              More About
+            </Button>
+            <FiArrowUpRight size={44} />
+          </div>
         </div>
       </div>
 
