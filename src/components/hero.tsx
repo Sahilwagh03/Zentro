@@ -50,7 +50,7 @@ const Hero = (props: Props) => {
           </div>
         </div>
 
-        <div className="mt-4 md:mt-0 flex items-baseline h-auto]">
+        <div className="mt-4 md:mt-0 flex items-baseline h-auto">
           <Image
             src="/images/Thender.svg"
             alt="Logo"

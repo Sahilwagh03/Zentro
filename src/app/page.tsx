@@ -1,5 +1,6 @@
 import Hero from "@/components/hero";
 import FAQ from "@/components/sections/FAQ";
+import Footer from "@/components/sections/Footer";
 import OurPromise from "@/components/sections/OurPromise";
 import OurResults from "@/components/sections/OurResults";
 import OurServices from "@/components/sections/OurServices";
@@ -18,6 +19,7 @@ export default function Home() {
       <OurServices/>
       <OurResults/>
       <FAQ/>
+      <Footer/>
     </main>
   );
 }

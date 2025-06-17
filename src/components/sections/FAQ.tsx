@@ -10,15 +10,18 @@ const faqs = [
   },
   {
     question: 'Will I need a new website?',
-    answer: 'Not necessarily. We assess your current website and recommend changes only if they will improve performance.',
+    answer:
+      'Not necessarily. We assess your current website and recommend changes only if they will improve performance.',
   },
   {
     question: 'Can you work with businesses in any industry?',
-    answer: 'Yes, our strategies are tailored to each industry and audience, ensuring effectiveness across sectors.',
+    answer:
+      'Yes, our strategies are tailored to each industry and audience, ensuring effectiveness across sectors.',
   },
   {
     question: 'Will I be locked into a contract?',
-    answer: 'No long-term contracts are required. We believe in results-driven relationships.',
+    answer:
+      'No long-term contracts are required. We believe in results-driven relationships.',
   },
 ];
 
@@ -41,18 +44,17 @@ const FAQ = () => {
           return (
             <div
               key={index}
-              className={`relative rounded-xl my-4 overflow-hidden transition-all duration-300 border ${
-                isOpen
-                  ? ' text-black border-primary min-h-32'
-                  : ' bg-[#0d0d0d] text-white border-gray-700'
-              }`}
+              className={`relative rounded-xl my-4 overflow-hidden transition-all duration-300 border ${isOpen
+                ? 'text-black min-h-32'
+                : 'bg-[#0d0d0d] text-white border-gray-700'
+                }`}
               onClick={() => setOpenIndex(isOpen ? -1 : index)}
             >
               {/* Background image overlay when open */}
               {isOpen && (
                 <div className="absolute inset-0 z-0">
                   <Image
-                    src="/images/faq-cover.svg"
+                    src="/images/faq-cover-1.svg"
                     alt="faq background"
                     fill
                     className="object-cover"
@@ -67,11 +69,16 @@ const FAQ = () => {
                 <span className="text-2xl">{isOpen ? '−' : '+'}</span>
               </div>
 
-              {isOpen && (
-                <div className="relative z-10 p-5 pt-0 text-base md:max-w-2xl md:text-sm">
-                  {faq.answer}
-                </div>
-              )}
+              {/* Animated Answer Section */}
+              <div
+                className={`
+                      relative z-10 px-5 ${isOpen ? 'pb-5' : 'pb-0'} pt-0 text-base md:max-w-2xl md:text-md 
+                      transition-all duration-500 ease-in-out overflow-hidden 
+                      transform ${isOpen ? 'opacity-100 max-h-40 scale-100' : 'opacity-0 max-h-0 scale-95'}
+                    `}
+              >
+                <p>{faq.answer}</p>
+              </div>
             </div>
           );
         })}
