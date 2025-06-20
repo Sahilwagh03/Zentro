@@ -7,7 +7,7 @@ type Props = {}
 
 const SolutionsSection = (props: Props) => {
   return (
-    <section className='relative px-4 py-10 md:px-8 md:py-20 font-oswald'>
+    <section className='relative px-4 py-10 md:px-8 md:py-20 font-oswald max-w-7xl mx-auto'>
       <div className='flex flex-col md:flex-row items-center md:items-start justify-between gap-8 md:gap-0'>
         <div className='text-center md:text-left'>
           <h2 className='text-4xl md:text-6xl'>

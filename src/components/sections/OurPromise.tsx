@@ -47,7 +47,7 @@ const cards = [
 
 const OurPromise = (props: Props) => {
   return (
-    <section className='relative font-oswald px-4 pb-10 md:px-8 md:pb-20'>
+    <section className='relative font-oswald px-4 pb-10 md:px-8 md:pb-20 max-w-7xl mx-auto'>
       <h3 className='flex items-center justify-center text-center gap-2 md:gap-4 mb-10'>
         <span className='text-4xl md:text-6xl font-semibold'>Our Promise</span>
         <span className='text-4xl md:text-6xl'>to You</span>
